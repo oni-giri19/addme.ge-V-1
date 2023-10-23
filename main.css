@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.language-changer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+header {
+  background: radial-gradient(
+      circle at top,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at bottom,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    );
+  background-size: 5em 5em;
+  background-color: #0e128dd1;
+}
+
+header .language-changer,
+header .exit,
+header .homepage {
+  opacity: 1; /* Set the opacity to 1 for the elements you want to be at full opacity */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.language-changer select {
+  border-radius: 20px;
+  color: white;
+  background-color: #0e128dd1;
+  padding: 2px;
+}
+.exit {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+.exit button {
+  color: white;
+  background-color: #0e128dd1;
+  font-size: 1rem;
+  padding: 13px 35px;
+  border-radius: 20px;
+  border: none;
+}
+.exit button:hover {
+  cursor: pointer;
+}
+.homepage img {
+  height: 150px;
+  width: 150px;
+  padding-bottom: 12px;
+}
