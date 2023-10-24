@@ -172,7 +172,8 @@ header .homepage {
 .body-content1 {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 10px;
 }
 .body-content2 {
   display: flex;
@@ -186,7 +187,9 @@ header .homepage {
   border: 1px solid;
   width: 100%;
 }
-.form-control:focus {
+input:focus {
+  background-color: #393da2;
+  color: white;
 }
 @media (max-width: 748px) {
   .card-body {
