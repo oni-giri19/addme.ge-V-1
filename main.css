@@ -181,6 +181,37 @@ header .homepage {
   justify-content: space-evenly;
   gap: 20px;
 }
+.body-content3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.number {
+  display: flex;
+  flex-direction: row;
+}
+.tel-input {
+  height: 31px;
+  padding-left: 5px;
+  border: 1px solid;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.svg {
+  padding: 0px 15px;
+  border: 1px solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+  height: 31px;
+}
+.svg-img {
+  height: 30px;
+  width: 30px;
+}
 .form-control {
   padding: 5px 10px;
   border-radius: 20px;
@@ -190,6 +221,196 @@ header .homepage {
 input:focus {
   background-color: #393da2;
   color: white;
+}
+input:focus::placeholder {
+  color: white;
+}
+.save-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #2d51e5;
+  color: wheat;
+  border: none;
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 20px;
+}
+.save-btn:hover {
+  cursor: pointer;
+  background-color: #393da2;
+  color: white;
+}
+
+footer {
+  background: radial-gradient(
+      circle at top,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at bottom,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 19%,
+      #ffd700 20%,
+      #2d51e5 25%,
+      transparent 26%
+    );
+  background-size: 5em 5em;
+  background-color: #0e128dd1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.contact-info div:nth-of-type(1),
+div:nth-of-type(2),
+div:nth-of-type(3),
+div:nth-of-type(4) {
+  display: flex;
+  flex: row;
+  /* gap: 10px; */
+}
+.contact-info {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(45, 81, 229, 0.6);
+}
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+.location,
+.our-email,
+.phone-number {
+  margin-bottom: 15px;
+  gap: 10px;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+i {
+  font-weight: 400;
+}
+i:nth-of-type(1) {
+  padding-left: 2px;
+}
+i:nth-of-type(2) {
+  padding-right: 2px;
+}
+.socials a {
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.socials a:hover {
+  border: #0e128dd1;
+  background-color: white;
+  color: #2d51e5;
+}
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(45, 81, 229, 0.6);
+}
+.quick-links h2 {
+  color: white;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+  gap: 10px;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+}
+.links a:hover {
+  color: #ffd700;
+  transition: 0.3s;
+}
+.links div i {
+  margin-right: 3px;
+  padding-top: 4px;
+  color: white;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(45, 81, 229, 0.6);
+  color: white;
+}
+.news button:hover {
+  cursor: pointer;
+}
+.news input:focus {
+  color: black;
+  background-color: white;
+}
+#scrollToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 36px;
+  right: 26px;
+  padding: 10px;
+  background-color: #0e128dd1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+#scrollToTopButton:hover {
+  color: #ffd700;
+}
+#qr-code {
+  position: fixed;
+  bottom: 36px;
+  left: 26px;
+  padding: 10px;
+  background-color: #0e128dd1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 @media (max-width: 748px) {
   .card-body {
@@ -215,6 +436,14 @@ input:focus {
   }
   .card-body2 {
     flex-direction: column;
+  }
+}
+@media (max-width: 659px) {
+  .body-content3 {
+    flex-direction: column;
+  }
+  .tel-input {
+    width: 100%;
   }
 }
 @media (max-width: 452px) {
